@@ -62,3 +62,14 @@ ul {
 .title {
   margin: 10px;
 }
+.title-high {
+  color: #03ff40;
+}
+.ex {
+  width: 400px;
+  height: 100px;
+  background-color: whitesmoke;
+}
+.ex > p {
+  color: black;
+}
