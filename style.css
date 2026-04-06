@@ -2,27 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 body {
   color: white;
   background-color: #0a0e27;
-}
-.navbar {
-  height: 60px;
+  width: 1920px;
+  height: 1080px;
+  padding-top: 70px;
+
 }
 .navbar {
   color: white;
   background-color: #06091a;
-  height: 60px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 30px;
+  padding: 20px;
 }
 .navbar > .container > .logo {
   font-size: x-large;
   font-weight: bold;
+  text-align: left;
 }
 .navbar > .container {
   display: flex;
@@ -43,7 +48,8 @@ body {
   flex-direction: row;
 }
 .navbar > .container > ul > li > a {
-  margin-left: 20px;
+  margin: 10px;
+  padding: 5px;
 }
 ul {
   list-style-type: none;
@@ -65,54 +71,81 @@ ul {
   flex-direction: row;
 }
 .left {
-  width: 500px;
-  height: 700px;
-  background-color: beige;
+  width: 1152px;
+  height: 1080px;
+  /* background-color: beige; */
+  display: flex;
+  align-items: center;
+
 }
 .left-content {
-  width: 500px;
+  width: 1000px;
+  height: 800px;
+  margin: 100px;
+  /* background-color: aqua; */
 }
 .title {
-  width: 400px;
-  height: 150px;
-  background-color: gray;
+  width: 1000px;
+  height: 300px;
+  /* background-color: gray; */
+  display: flex;
+  align-items: center;
+
 }
-.title > h1 > div {
-  text-align: left;
+.title > h1 {
+  font-size: 60px;
+  margin: 0 20px;
+  
 }
 .title-high {
   color: #03ff40;
 }
+.title-all{
+  display: inline-block;
+  margin: 0 0px;
+  
+}
 .ex {
-  width: 400px;
+  width: 1000px;
   height: 70px;
-  background-color: whitesmoke;
+  /* background-color: gold; */
+  display: flex;
+  /* justify-content: center;  */
+  align-items: center;
+
 }
 .ex > p {
-  color: black;
-  text-align: center;
-  padding: 15px;
+  color: white;
+  text-align: left;
+  margin: 0 20px;
+  font-size: large;
 }
 .button {
-  width: 400px;
-  height: 50px;
-  background-color: lightpink;
+  width: 1000px;
+  height: 60px;
+  /* background-color: lightpink; */
   display: flex;
   flex-direction: row;
+  align-items: center;
+  /* justify-content: center;  */
+  margin: 20px auto;
 }
 .btn {
-  width: 180px;
-  height: 40px;
-  background-color: lightblue;
+  width: 300px;
+  height: 50px;
+  background-color: white;
   border: none;
   border-radius: 10px;
   text-align: center;
+  margin: 20px;
+  font-size: 17px;
 }
 .btn:hover {
-  background-color: deepskyblue;
+  background-color: #03ff40;
+  color: white;
 }
 .right {
-  width: 500px;
-  height: 700px;
+  width: 768px;
+  height: 1080px;
   background-color: lightgreen;
 }
