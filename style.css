@@ -10,9 +10,6 @@ body {
 .navbar {
   height: 60px;
 }
-.title {
-  font-size: xx-large;
-}
 .navbar {
   color: white;
   background-color: #06091a;
@@ -59,4 +56,9 @@ ul {
 }
 .nav > li > a:hover {
   text-decoration: underline;
+  color: #03ff40;
+  font-size: larger;
+}
+.title {
+  margin: 10px;
 }
