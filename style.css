@@ -156,3 +156,9 @@ ul {
 .right-image > img {
   width: 500px;
 }
+.ex > p {
+  line-height: 1.5;
+}
+.logo-high {
+  color: #03ff40;
+}
