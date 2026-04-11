@@ -156,6 +156,9 @@ ul {
 .right-image > img {
   width: 500px;
 }
+.ex {
+  height: fit-content;
+}
 .ex > p {
   line-height: 1.5;
   margin: 50px 20px;
