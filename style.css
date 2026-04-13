@@ -116,7 +116,7 @@ ul {
 
 .right {
   width: 768px;
-  height: 980px;
+  height: 580px;
   /* background-color: lightgreen; */
   display: flex;
   justify-content: center;
@@ -147,4 +147,116 @@ ul {
   width: 1920px;
   height: 100px;
   /* background-color: antiquewhite; */
+}
+/* .bottom {
+  width: 1920px;
+  height: 300px;
+  /* background-color: aquamarine; */
+/* } */
+.bottom > hr {
+  width: 1920px;
+  height: 0px;
+  color: gray;
+  margin: 0px 40px;
+}
+/* .bottom-content {
+  height: 150px;
+  background-color: lightcoral;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stre;
+}
+.bottom-high {
+  color: #03ff40;
+}
+.bottom-ex > p {
+  margin: 20px 5px;
+  line-height: 1.4;
+}
+
+.bottom-secure {
+  width: 300px;
+  height: 50px;
+  color: gray;
+  /* background-color: lightgrey; 
+}
+.bottom-topics {
+  background-color: aqua;
+  height: 150px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.bottom-topics > div {
+  flex: 1;
+}
+.bottom-ex > h2 {
+  font-size: 30px;
+  margin: 0;
+}
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 400px;
+} */
+.bottom {
+  width: 1920px;
+  height: 300px;
+}
+.bottom > hr {
+  width: 1840px;
+  height: 0px;
+  color: gray;
+  margin: 0px 40px;
+}
+.bottom-content {
+  height: 150px;
+  background-color: lightcoral;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-high {
+  color: #03ff40;
+}
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+  width: 400px;
+}
+.bottom-ex > p {
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.bottom-secure {
+  margin: 4px 0 0 0;
+  color: gray;
+}
+/* .bottom-topics {
+  background-color: aqua;
+  height: 150px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+} */
+.bottom-topics {
+  background-color: aqua;
+  height: 150px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-right: auto;
+}
+.bottom-topics > div {
+  flex: 1;
 }
