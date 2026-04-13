@@ -13,7 +13,7 @@ body {
 .navbar {
   color: white;
   background-color: #06091a;
-  height: 70px;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -70,8 +70,8 @@ ul {
 }
 .left {
   width: 1152px;
-  height: 1080px;
-  /* background-color: beige; */
+  height: 880px;
+  /* background-color: hotpink; */
   display: flex;
   align-items: center;
 }
@@ -113,33 +113,10 @@ ul {
   margin: 0 20px;
   font-size: larger;
 }
-.button {
-  width: 1000px;
-  height: 60px;
-  /* background-color: lightpink; */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* justify-content: center;  */
-  margin: 20px auto;
-}
-.btn {
-  width: 300px;
-  height: 50px;
-  background-color: white;
-  border: none;
-  border-radius: 10px;
-  text-align: center;
-  margin: 20px;
-  font-size: 17px;
-}
-.btn:hover {
-  background-color: #03ff40;
-  color: white;
-}
+
 .right {
   width: 768px;
-  height: 1080px;
+  height: 980px;
   /* background-color: lightgreen; */
   display: flex;
   justify-content: center;
@@ -148,7 +125,7 @@ ul {
   width: 500px;
   height: 500px;
   /* background-color: blue; */
-  margin: 102.5px 150px;
+  /* margin: 102.5px 150px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,4 +142,9 @@ ul {
 }
 .logo-high {
   color: #03ff40;
+}
+.top {
+  width: 1920px;
+  height: 100px;
+  /* background-color: antiquewhite; */
 }
