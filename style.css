@@ -6,9 +6,11 @@
 body {
   color: white;
   background-color: #0a0e27;
-  width: 1920px;
+  /* width: 1920px;
   height: 1080px;
-  padding-top: 70px;
+  width: 100%;
+  height: 100%; */
+  padding-top: 80px;
 }
 .navbar {
   color: white;
@@ -18,6 +20,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
 }
 .container {
   padding: 20px;
@@ -125,7 +128,6 @@ ul {
   width: 500px;
   height: 500px;
   /* background-color: blue; */
-  /* margin: 102.5px 150px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,26 +226,114 @@ ul {
 .bottom-ex > p {
   margin: 10px 0;
 }
+.more {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.more > span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  border-radius: 3px;
+}
 @media (max-width: 768px) {
+  body {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    /* overflow-x: hidden; */
+  }
   .navbar > .container > .logo {
     font-size: x-large;
     font-weight: bold;
     text-align: left;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .navbar > .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .navbar > .container > .nav {
     display: none;
   }
   .title > h1 {
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     margin: 0 20px;
   }
   .ex > p {
     text-align: center;
     margin: 0 20px;
+  }
+  .bottom-topics {
+    display: none;
+  }
+  .more {
+    display: flex;
+    margin: 10px;
+  }
+  .content {
+    flex-direction: column; /* 좌우 → 위아래 */
+  }
+  .left {
+    width: 100%;
+    height: auto;
+    order: 2;
+  }
+  .left-content {
+    width: 100%;
+    margin: 20px;
+  }
+  .title {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+  .right {
+    width: 100%;
+    height: auto;
+    order: 1;
+    justify-content: center;
+  }
+
+  .right-image {
+    width: 200% !important;
+    height: auto !important;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    margin-left: -50%;
+  }
+  .right-image > img {
+    width: 500% !important;
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 80%,
+      transparent 100%
+    );
+  }
+  .ex {
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .bottom {
+    width: 100%;
+    overflow: hidden;
+  }
+  .bottom > hr {
+    width: 85% !important;
+    margin-right: 10px !important;
+  }
+  .top {
+    display: none;
   }
 }
