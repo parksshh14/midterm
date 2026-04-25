@@ -13,7 +13,8 @@
           <span></span><span></span><span></span>
         </button>
         <div class="logo">
-          <span class="logo-def">Secure </span><span class="logo-high">Web</span>
+          <span class="logo-def">Secure </span
+          ><span class="logo-high">Web</span>
         </div>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
@@ -34,7 +35,7 @@
           <h1>DDOS 공격</h1>
           <span class="category-tag1">웹</span>
         </div>
-        <p>#트래픽_과부하 #좀비PC_집단공격 #서비스_마비</p>
+        <p>#좀비PC_집단공격 #서비스_마비</p>
         <span class="toggle">자세히 보기 ▾</span>
         <p class="desc">
           DDoS(분산 서비스 거부) 공격은 여러 대의 컴퓨터를 동원해 특정 서버나
@@ -94,9 +95,8 @@
       <div class="box">
         <div class="box-top">
           <h1>
-            Insecure Design
+            Insecure<br>Design
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </h1>
           <br />
           <span class="category-tag2">애플리케이션</span>
@@ -112,7 +112,7 @@
 
       <div class="box">
         <div class="box-top">
-          <h1>Vulnerable and Outdated Components</h1>
+          <h1>Vulnerable and Outdated </h1>
           <span class="category-tag2">애플리케이션</span>
         </div>
         <p>#모니터링 #취약점 #최신화</p>
@@ -155,19 +155,18 @@
 
       <div class="box">
         <div class="box-top">
-          <h1>Secure Socket Layer</h1>
+          <h1>Firewall</h1>
           <span class="category-tag3">네트워크</span>
         </div>
-        <p>#데이터암호화 #비밀통로 #정보유출방지</p>
+        <p>#경계보안 #트래픽제어 #비인가차단</p>
         <span class="toggle">자세히 보기 ▾</span>
         <p class="desc">
-          인터넷에서 데이터를 주고받을 때 내용을 알아볼 수 없게 암호로 바꾸어
-          전달하는 기술입니다. 소켓 통신 과정에서 데이터를 '금고'에 넣어
-          전달하는 것과 같아서 중간에 누군가 데이터를 훔쳐 가더라도 내용을 절대
-          읽을 수 없게 만드는 현대 보안의 필수 요소입니다.
+          신뢰할 수 없는 외부의 침입으로부터 내부 네트워크를 보호하기 위해,
+          허가되지 않은 트래픽은 막고 허가된 통신만 통과시키는 가장 기본적인
+          보안 시스템입니다.
         </p>
       </div>
-            <div class="bottom">
+      <div class="bottom">
         <hr />
         <div class="bottom-content">
           <div class="bottom-left">
@@ -175,7 +174,10 @@
               <h2>Secure <span class="bottom-high">Web</span></h2>
             </div>
             <div class="bottom-ex">
-              <p>보안과 웹 개발의 교차점에서 미래 기술을<br />탐구하는 팀 프로젝트입니다.</p>
+              <p>
+                보안과 웹 개발의 교차점에서 미래 기술을<br />탐구하는 팀
+                프로젝트입니다.
+              </p>
             </div>
             <br />
             <div class="bottom-secure">2026 중부대학교 정보보호학과</div>
@@ -205,43 +207,49 @@
               <ul>
                 <li>IP Header & ACL</li>
                 <li>Secure Connection</li>
-                <li>Secure Socket Layer</li>
+                <li>Firewall</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-
     </div>
 
     <script>
       document.querySelectorAll('.toggle').forEach((btn) => {
         btn.addEventListener('click', function () {
-          const desc = this.nextElementSibling
+          const box = this.closest('.box')
+          const desc = box.querySelector('.desc')
           const isHidden =
             desc.style.display === 'none' || desc.style.display === ''
+
+          document.querySelectorAll('.box').forEach((otherBox) => {
+            const otherDesc = otherBox.querySelector('.desc')
+            const otherToggle = otherBox.querySelector('.toggle')
+
+            otherDesc.style.display = 'none'
+            otherToggle.textContent = '자세히 보기 ▾'
+          })
+
           if (isHidden) {
             desc.style.display = 'block'
             this.textContent = '접기 ▴'
-          } else {
-            desc.style.display = 'none'
-            this.textContent = '자세히 보기 ▾'
           }
         })
       })
-            const btn = document.getElementById('menuBtn');
-      const menu = document.getElementById('mobileMenu');
+
+      const btn = document.getElementById('menuBtn')
+      const menu = document.getElementById('mobileMenu')
 
       btn.addEventListener('click', () => {
-        menu.classList.toggle('open');
-      });
+        menu.classList.toggle('open')
+      })
 
       document.addEventListener('click', (e) => {
         if (!btn.contains(e.target) && !menu.contains(e.target)) {
-          menu.classList.remove('open');
+          menu.classList.remove('open')
         }
-      });
-
+      })
     </script>
   </body>
 </html>

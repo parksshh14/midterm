@@ -111,7 +111,9 @@ ul {
   font-weight: bold;
   padding: 16px 24px;
   border-bottom: 1px solid #1a2040;
-  transition: color 0.2s, background 0.2s;
+  transition:
+    color 0.2s,
+    background 0.2s;
 }
 
 .mobile-menu a:hover {
@@ -462,7 +464,6 @@ p {
   margin-bottom: 20px;
 }
 
-
 @media (max-width: 768px) {
   body {
     width: 100%;
@@ -525,25 +526,37 @@ p {
   }
 
   .right {
-
     width: 100%;
-  order: 1;
-  min-height: auto;
-  overflow: hidden;
+    order: 1;
+    min-height: auto;
+    overflow: hidden;
   }
 
   .right-image {
     width: auto;
     overflow: hidden;
-    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 80%, transparent 100%);
-    display: block;  
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 15%,
+      black 80%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 15%,
+      black 80%,
+      transparent 100%
+    );
+    display: block;
     transform: scale(1.5);
     transform-origin: center top;
   }
 
   .right-image > img {
-    width: 100%;display: block;
+    width: 100%;
+    display: block;
   }
 
   .bottom {
@@ -564,12 +577,21 @@ p {
     width: calc(100% - 40px);
     margin: 10px 20px;
   }
-    .team-grid {
+  .team-grid {
     flex-direction: column;
     align-items: center;
   }
   .team-title {
     font-size: 2rem;
   }
+}
 
+/* 제목 줄바꿈 방지 */
+.bottom-topics h3 {
+  white-space: nowrap;
+}
+
+/* 가운데 박스 공간 확보 */
+.bottom-topics > div {
+  min-width: 180px;
 }

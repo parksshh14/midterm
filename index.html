@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
     <nav class="navbar">
       <div class="container">
         <button class="more" id="menuBtn" aria-label="메뉴 열기">
           <span></span><span></span><span></span>
         </button>
         <div class="logo">
-          <span class="logo-def">Secure </span><span class="logo-high">Web</span>
+          <span class="logo-def">Secure </span
+          ><span class="logo-high">Web</span>
         </div>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
@@ -37,8 +37,9 @@
           <div class="left-content">
             <div class="title">
               <h1>
-                <span class="title-def">디지털 세상을<br></span>
-                <span class="title-high">안전하게 </span><span class="title-def">지키는</span><br>
+                <span class="title-def">디지털 세상을<br /></span>
+                <span class="title-high">안전하게 </span
+                ><span class="title-def">지키는</span><br />
                 <span class="title-def">보안 기술 탐구</span>
               </h1>
             </div>
@@ -67,7 +68,10 @@
               <h2>Secure <span class="bottom-high">Web</span></h2>
             </div>
             <div class="bottom-ex">
-              <p>보안과 웹 개발의 교차점에서 미래 기술을<br />탐구하는 팀 프로젝트입니다.</p>
+              <p>
+                보안과 웹 개발의 교차점에서 미래 기술을<br />탐구하는 팀
+                프로젝트입니다.
+              </p>
             </div>
             <br />
             <div class="bottom-secure">2026 중부대학교 정보보호학과</div>
@@ -97,7 +101,7 @@
               <ul>
                 <li>IP Header & ACL</li>
                 <li>Secure Connection</li>
-                <li>Secure Socket Layer</li>
+                <li>Firewall</li>
               </ul>
             </div>
           </div>
@@ -106,16 +110,16 @@
     </div>
 
     <script>
-      const btn = document.getElementById('menuBtn');
-      const menu = document.getElementById('mobileMenu');
+      const btn = document.getElementById('menuBtn')
+      const menu = document.getElementById('mobileMenu')
       btn.addEventListener('click', () => {
-        menu.classList.toggle('open');
-      });
+        menu.classList.toggle('open')
+      })
       document.addEventListener('click', (e) => {
         if (!btn.contains(e.target) && !menu.contains(e.target)) {
-          menu.classList.remove('open');
+          menu.classList.remove('open')
         }
-      });
+      })
     </script>
   </body>
 </html>

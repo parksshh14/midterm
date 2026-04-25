@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>SecureWeb | Team</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-
     <nav class="navbar">
       <div class="container">
         <button class="more" id="menuBtn" aria-label="메뉴 열기">
           <span></span><span></span><span></span>
         </button>
         <div class="logo">
-          <span class="logo-def">Secure </span><span class="logo-high">Web</span>
+          <span class="logo-def">Secure </span
+          ><span class="logo-high">Web</span>
         </div>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
@@ -42,14 +42,26 @@
           <p class="team-role">팀장</p>
           <p class="team-univ">정보보호학과 3학년</p>
           <div class="team-links">
-            <a href="https://github.com/pmj2744" target="_blank" class="icon-btn">
-              <img src="git.png" alt="GitHub">
+            <a
+              href="https://github.com/pmj2744"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="git.png" alt="GitHub" />
             </a>
-            <a href="https://blog.naver.com/pmj2744" target="_blank" class="icon-btn">
-              <img src="blog.png" alt="Blog">
+            <a
+              href="https://blog.naver.com/pmj2744"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="blog.png" alt="Blog" />
             </a>
-            <a href="https://pmj2744-portfolio.vercel.app/" target="_blank" class="icon-btn">
-              <img src="fortfolio.png" alt="Portfolio">
+            <a
+              href="https://my-portfolio-omega-one-16.vercel.app/"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="fortfolio.png" alt="Portfolio" />
             </a>
           </div>
         </div>
@@ -62,14 +74,26 @@
           <p class="team-role">팀원</p>
           <p class="team-univ">정보보호학과 2학년</p>
           <div class="team-links">
-            <a href="https://github.com/kimjungeunn" target="_blank" class="icon-btn">
-              <img src="git.png" alt="GitHub">
+            <a
+              href="https://github.com/kimjungeunn"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="git.png" alt="GitHub" />
             </a>
-            <a href="https://kje0408blog.tistory.com/" target="_blank" class="icon-btn">
-              <img src="blog.png" alt="Blog">
+            <a
+              href="https://kje0408blog.tistory.com/"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="blog.png" alt="Blog" />
             </a>
-            <a href="https://vercel.com/kimjungeunns-projects" target="_blank" class="icon-btn">
-              <img src="fortfolio.png" alt="Portfolio">
+            <a
+              href="https://vercel.com/kimjungeunns-projects"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="fortfolio.png" alt="Portfolio" />
             </a>
           </div>
         </div>
@@ -82,14 +106,26 @@
           <p class="team-role">팀원</p>
           <p class="team-univ">정보보호학과 2학년</p>
           <div class="team-links">
-            <a href="https://github.com/parksshh14" target="_blank" class="icon-btn">
-              <img src="git.png" alt="GitHub">
+            <a
+              href="https://github.com/parksshh14"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="git.png" alt="GitHub" />
             </a>
-            <a href="https://velog.io/@parksshh14/posts" target="_blank" class="icon-btn">
-              <img src="blog.png" alt="Blog">
+            <a
+              href="https://velog.io/@parksshh14/posts"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="blog.png" alt="Blog" />
             </a>
-            <a href="https://jbu-parksh.vercel.app" target="_blank" class="icon-btn">
-              <img src="fortfolio.png" alt="Portfolio">
+            <a
+              href="https://jbu-parksh.vercel.app"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="fortfolio.png" alt="Portfolio" />
             </a>
           </div>
         </div>
@@ -104,7 +140,10 @@
             <h2>Secure <span class="bottom-high">Web</span></h2>
           </div>
           <div class="bottom-ex">
-            <p>보안과 웹 개발의 교차점에서 미래 기술을<br />탐구하는 팀 프로젝트입니다.</p>
+            <p>
+              보안과 웹 개발의 교차점에서 미래 기술을<br />탐구하는 팀
+              프로젝트입니다.
+            </p>
           </div>
           <br />
           <div class="bottom-secure">2026 중부대학교 정보보호학과</div>
@@ -134,7 +173,7 @@
             <ul>
               <li>IP Header & ACL</li>
               <li>Secure Connection</li>
-              <li>Secure Socket Layer</li>
+              <li>Firewall</li>
             </ul>
           </div>
         </div>
@@ -142,19 +181,18 @@
     </div>
 
     <script>
-      const btn = document.getElementById('menuBtn');
-      const menu = document.getElementById('mobileMenu');
+      const btn = document.getElementById('menuBtn')
+      const menu = document.getElementById('mobileMenu')
 
       btn.addEventListener('click', () => {
-        menu.classList.toggle('open');
-      });
+        menu.classList.toggle('open')
+      })
 
       document.addEventListener('click', (e) => {
         if (!btn.contains(e.target) && !menu.contains(e.target)) {
-          menu.classList.remove('open');
+          menu.classList.remove('open')
         }
-      });
+      })
     </script>
-
   </body>
 </html>
